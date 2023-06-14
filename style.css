@@ -36,7 +36,7 @@ header{
     background-color: #622cf5;
     box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
     width: 400px;
-    height: 100vh;
+    height: 300vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -88,7 +88,7 @@ button{
     outline: none;
     text-decoration: none;
 }
-svg{
+header svg{
     margin-top: 10px;
     width: 24px;
     height: 24px;
@@ -192,6 +192,7 @@ strong{
 .encabezado{
     margin-top: 5px;
     margin-left: 35px;
+    margin-right: 10px;
     font-size: 0.45rem;
 }
 .parrafo{
@@ -237,6 +238,12 @@ strong{
 .indice2{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.indice4{
+    display: flex;
+    align-items: center;
+    font-size: 0.3rem;
     justify-content: space-between;
 }
 .indice3{

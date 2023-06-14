@@ -12,7 +12,7 @@ const menu = document.querySelector("#caja-indice")
 
 const tporBtn = document.querySelector("#tportada")
 const tconBtn = document.querySelector("#tcontra")
-tconBtn.addEventListener('click', (e) => {
+tconBtn.addEventListener('click', (e) => {//fun1//
     if(currentLocation<26){
         paper1.classList.add("arrastre");
         paper1.style.zIndex=1;
@@ -29,7 +29,6 @@ tconBtn.addEventListener('click', (e) => {
                 paper5.classList.add("arrastre");
                 paper5.style.zIndex = 5;
            
-   
             paper6.classList.add("arrastre");
             paper6.style.zIndex = 6;
   
@@ -93,7 +92,7 @@ tconBtn.addEventListener('click', (e) => {
             currentLocation=26;
     }
 })
-tporBtn.addEventListener('click', (e) => {
+tporBtn.addEventListener('click', (e) => {//fun2//
     if(currentLocation>1){
         closeBook(true);
         paper1.classList.remove("arrastre");
@@ -201,7 +200,7 @@ const t25Btn = document.querySelector("#t25")
 
 
 
-menuBtn.addEventListener('click', (e) => {
+menuBtn.addEventListener('click', (e) => {//fun3//
     menu.classList.toggle('active');
     document.body.classList.toggle('opacity');
 });
@@ -244,17 +243,17 @@ let numOfPaper = 25;
 let maxLocation = numOfPaper + 1; 
 let zoomLevel=1;
 
-function zoomIn() {
+function zoomIn() {//fun4//
     zoomLevel+=0.1
     content.style.transform="scale("+zoomLevel+") translateY(10%)";
 }
-function zoomOut() {
+function zoomOut() {//fun5//
     zoomLevel-=0.1
     content.style.transform="scale("+zoomLevel+")";
 }
 
 
-function goFirstPage() {
+function goFirstPage() {//fun6//
     if(currentLocation>1){
         closeBook(true);
                 paper1.classList.remove("arrastre");
@@ -333,7 +332,7 @@ function goFirstPage() {
     }
     currentLocation=1
 }
-function goLastPage() {
+function goLastPage() {//fun7//
     if(currentLocation<maxLocation){
         paper1.classList.add("arrastre");
         paper1.style.zIndex=1;
@@ -415,10 +414,10 @@ function goLastPage() {
     }
     currentLocation=26
 }
-function openBook() {
+function openBook() {//fun8//
     book.style.transform="translateX(50%)";
 }
-function closeBook(isAtBeggining) {
+function closeBook(isAtBeggining) {//fun9//
     if(isAtBeggining){
         book.style.transform="translateX(0%)"
     }else{
@@ -426,7 +425,7 @@ function closeBook(isAtBeggining) {
     }
 }
 
-function goPrevPage() {
+function goPrevPage() {//fun10//
     if(currentLocation > 1){
         switch(currentLocation){
             case 2:
@@ -537,7 +536,7 @@ function goPrevPage() {
         currentLocation--;
     }
 }
-t1Btn.addEventListener('click', (e) =>{
+t1Btn.addEventListener('click', (e) =>{//fun11//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -619,7 +618,7 @@ t1Btn.addEventListener('click', (e) =>{
         currentLocation=2;
     }
 })
-t2Btn.addEventListener('click', (e) =>{
+t2Btn.addEventListener('click', (e) =>{//fun12//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -701,7 +700,7 @@ t2Btn.addEventListener('click', (e) =>{
         currentLocation=3;
     }
 })
-t3Btn.addEventListener('click', (e) =>{
+t3Btn.addEventListener('click', (e) =>{//fun13//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -783,7 +782,7 @@ t3Btn.addEventListener('click', (e) =>{
         currentLocation=4;
     }
 })
-t4Btn.addEventListener('click', (e) =>{
+t4Btn.addEventListener('click', (e) =>{//fun14//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -865,7 +864,7 @@ t4Btn.addEventListener('click', (e) =>{
         currentLocation=5;
     }
 })
-t5Btn.addEventListener('click', (e) =>{
+t5Btn.addEventListener('click', (e) =>{//fun15//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -945,7 +944,7 @@ t5Btn.addEventListener('click', (e) =>{
         currentLocation=6;
     }
 })
-t6Btn.addEventListener('click', (e) =>{
+t6Btn.addEventListener('click', (e) =>{//fun16//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1028,7 +1027,7 @@ t6Btn.addEventListener('click', (e) =>{
         currentLocation=7;
     }
 })
-t7Btn.addEventListener('click', (e) =>{
+t7Btn.addEventListener('click', (e) =>{//fun17//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1111,7 +1110,7 @@ t7Btn.addEventListener('click', (e) =>{
         currentLocation=8;
     }
 })
-t8Btn.addEventListener('click', (e) =>{
+t8Btn.addEventListener('click', (e) =>{//fun18//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1194,7 +1193,7 @@ t8Btn.addEventListener('click', (e) =>{
         currentLocation=9;
     }
 })
-t9Btn.addEventListener('click', (e) =>{
+t9Btn.addEventListener('click', (e) =>{//fun19//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1277,7 +1276,7 @@ t9Btn.addEventListener('click', (e) =>{
         currentLocation=10;
     }
 })
-t10Btn.addEventListener('click', (e) =>{
+t10Btn.addEventListener('click', (e) =>{//fun20//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1360,7 +1359,7 @@ t10Btn.addEventListener('click', (e) =>{
         currentLocation=11;
     }
 })
-t11Btn.addEventListener('click', (e) =>{
+t11Btn.addEventListener('click', (e) =>{//fun21//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1443,7 +1442,7 @@ t11Btn.addEventListener('click', (e) =>{
         currentLocation=12;
     }
 })
-t12Btn.addEventListener('click', (e) =>{
+t12Btn.addEventListener('click', (e) =>{//fun22//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1526,7 +1525,7 @@ t12Btn.addEventListener('click', (e) =>{
         currentLocation=13;
     }
 })
-t13Btn.addEventListener('click', (e) =>{
+t13Btn.addEventListener('click', (e) =>{//fun23//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1609,7 +1608,7 @@ t13Btn.addEventListener('click', (e) =>{
         currentLocation=14;
     }
 })
-t14Btn.addEventListener('click', (e) =>{
+t14Btn.addEventListener('click', (e) =>{//fun24//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1692,7 +1691,7 @@ t14Btn.addEventListener('click', (e) =>{
         currentLocation=15;
     }
 })
-t15Btn.addEventListener('click', (e) =>{
+t15Btn.addEventListener('click', (e) =>{//fun25//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1775,7 +1774,7 @@ t15Btn.addEventListener('click', (e) =>{
         currentLocation=16;
     }
 })
-t16Btn.addEventListener('click', (e) =>{
+t16Btn.addEventListener('click', (e) =>{//fun26//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1858,7 +1857,7 @@ t16Btn.addEventListener('click', (e) =>{
         currentLocation=17;
     }
 })
-t17Btn.addEventListener('click', (e) =>{
+t17Btn.addEventListener('click', (e) =>{//fun27//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -1941,7 +1940,7 @@ t17Btn.addEventListener('click', (e) =>{
         currentLocation=18;
     }
 })
-t18Btn.addEventListener('click', (e) =>{
+t18Btn.addEventListener('click', (e) =>{//fun28//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -2024,7 +2023,7 @@ t18Btn.addEventListener('click', (e) =>{
         currentLocation=19;
     }
 })
-t19Btn.addEventListener('click', (e) =>{
+t19Btn.addEventListener('click', (e) =>{//fun29//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -2107,7 +2106,7 @@ t19Btn.addEventListener('click', (e) =>{
         currentLocation=20;
     }
 })
-t20Btn.addEventListener('click', (e) =>{
+t20Btn.addEventListener('click', (e) =>{//fun30//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -2190,7 +2189,7 @@ t20Btn.addEventListener('click', (e) =>{
         currentLocation=21;
     }
 })
-t21Btn.addEventListener('click', (e) =>{
+t21Btn.addEventListener('click', (e) =>{//fun31//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -2273,7 +2272,7 @@ t21Btn.addEventListener('click', (e) =>{
         currentLocation=22;
     }
 })
-t22Btn.addEventListener('click', (e) =>{
+t22Btn.addEventListener('click', (e) =>{//fun32//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -2356,7 +2355,7 @@ t22Btn.addEventListener('click', (e) =>{
         currentLocation=23;
     }
 })
-t23Btn.addEventListener('click', (e) =>{
+t23Btn.addEventListener('click', (e) =>{//fun33//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -2439,7 +2438,7 @@ t23Btn.addEventListener('click', (e) =>{
         currentLocation=24;
     }
 })
-t24Btn.addEventListener('click', (e) =>{
+t24Btn.addEventListener('click', (e) =>{//fun34//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -2522,7 +2521,7 @@ t24Btn.addEventListener('click', (e) =>{
         currentLocation=25;
     }
 })
-t25Btn.addEventListener('click', (e) =>{
+t25Btn.addEventListener('click', (e) =>{//fun35//
     if(currentLocation<maxLocation||currentLocation>1){
         if(currentLocation==1||currentLocation==26){
             openBook();
@@ -2604,7 +2603,7 @@ t25Btn.addEventListener('click', (e) =>{
         currentLocation=4;
     }
 })
-function goNextPage() {
+function goNextPage() {//fun36//
     if(currentLocation < maxLocation){
         switch(currentLocation){
             case 1:
