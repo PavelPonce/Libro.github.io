@@ -1,3 +1,192 @@
+const text1Btn = document.querySelector("#text1-btn");
+const text2Btn = document.querySelector("#text2-btn");
+const text3Btn = document.querySelector("#text3-btn");
+const checkmark = document.querySelector("#checkmark");
+const xmark = document.querySelector("#xmark");
+
+text1Btn.addEventListener('click', (e) => {//fun37//
+    var n;
+    n=prompt("Ingrese imagen 1")
+    if(n=="enfermo"){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Prueba todas minusculas o la palabras mas corta.")
+    }
+})
+text2Btn.addEventListener('click', (e) => {//fun38//
+    var n;
+    n=prompt("Ingrese imagen 1")
+    if(n=="aburrido"){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Prueba todas minusculas o la palabra mas corta.")
+    }
+})
+text3Btn.addEventListener('click', (e) => {//fun39//
+    var n;
+    n=prompt("Ingrese imagen 1")
+    if(n=="sueño"){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Prueba todas minusculas o la palabras mas corta.")
+    }
+})
+
+const rad1Btn = document.querySelector("#radio1");
+const rad2Btn = document.querySelector("#radio2");
+const rad3Btn = document.querySelector("#radio3");
+const rad4Btn = document.querySelector("#radio4");
+const rad5Btn = document.querySelector("#radio5");
+const rad6Btn = document.querySelector("#radio6");
+const rad7Btn = document.querySelector("#radio7");
+const rad8Btn = document.querySelector("#radio8");
+const rad9Btn = document.querySelector("#radio9");
+const rad10Btn = document.querySelector("#radio10");
+const rad11Btn = document.querySelector("#radio11");
+
+rad2Btn.addEventListener('click', (e) => {//fun40//
+    var n;
+    n=parseInt(prompt("¿Cuál es el tema central que se desarrolla en el fragmento? \n1. La importancia de las palabras en la comunicación. \n2. La sabiduría de los mayas. \n3. La manipulación de los medios informativos. \n4. Los accidentes de los ciclistas."))
+    if(n==1){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+rad1Btn.addEventListener('click', (e) => {//fun41//
+    var n;
+    n=parseInt(prompt("Desde los tiempos de Cristo, los mayas sabian que las palabras: \n1. Debian tener dios \n2. se susurran al oido \n3. poseen autoridad \n4. tienen poder"))
+    if(n==4){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+rad3Btn.addEventListener('click', (e) => {//fun42//
+    var n;
+    n=parseInt(prompt("¿Cuál es la intención del texto? \n1. Narrar un hecho histórico. \n2. Expresar sentimientos. \n3. Argumentar sobre un tema específico. \n4. Dar instrucciones."))
+    if(n==3){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+rad4Btn.addEventListener('click', (e) => {//fun43//
+    var n;
+    n=parseInt(prompt(" En el fragmento: «Ahora sabemos,<b>además</b>, que los mayas lo sabían desde los tiempos de Cristo», la palabra resaltada indica: \n1. una oposición entre lo que se dijo y lo que va a decirse. \n2. la continuación de lo que se venía afirmando. \n3.la idea central del texto. \n4. una pausa en la lectura."))
+    if(n==2){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+rad6Btn.addEventListener('click', (e) => {//fun44//
+    var n;
+    n=parseInt(prompt(" ¿Cuál es el mensaje del texto?\n1. Las personas deben tener cuidado al cruzar por la calle, ya que pueden ocurrir accidentes. \n2. Las palabras son la forma principal de la comunicación humana.\n3.Los mayas comprendían la importancia de las palabras en la vida de las personas.\n4.Los libros desechables sacralizan y maltratan las palabras. "))
+    if(n==2){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+rad7Btn.addEventListener('click', (e) => {//fun45//
+    var n;
+    n=parseInt(prompt(" ¿Dónde se desarrollan los hechos de la anécdota?\n1. Un estadio.\n2.Un congreso.\n3.Un campo de ciclistas. \n4. La calle."))
+    if(n==4){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+rad5Btn.addEventListener('click', (e) => {//fun46//
+    var n;
+    n=parseInt(prompt(" Según el contexto, la expresión «los idiomas se dispersan sueltos de madrina» quiere decir:  \n1. los idiomas cada día son más diferentes.\n2. los idiomas no cambian.\n3.Las personas se preocupan por los idiomas. \n4. los idiomas no tienen un objetivo."))
+    if(n==1){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+rad8Btn.addEventListener('click', (e) => {//fun47//
+    var n;
+    n=parseInt(prompt(" El escrito empieza con una anécdota que nos habla del «poder de la palabra» ¿Cuál es la opinión más certera sobre este poder?\n1.Es una idea falsa, ya que en la actualidad las palabras mentir a la sociedad.\n2.Los políticos utilizan el poder de la palabra para mentir a la sociedad.\n3.Es una idea correcta, pues la palabra es un medio que tiene la sociedad para comunicarse.  \n4.Es una idea que no aplica, puesto que en la actualidad lo que importa es la apariencia."))
+    if(n==3){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+rad9Btn.addEventListener('click', (e) => {//fun48//
+    var n;
+    n=parseInt(prompt("¿Qué opinión es la más acertada sobre la existencia de diferentes idiomas en el mundo?\n1.Es necesario que las diferencias entre los idiomas se acaben y se cree un lenguaje global. \n2.Los medios de comunicación harán que los idiomas desaparezcan. \n3.Es importante conservar los idiomas, ya que representan la identidad de cada pueblo.\n4.Los idiomas tienen libre albedrío debido a que están en constante cambio."))
+    if(n==4){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+rad10Btn.addEventListener('click', (e) => {//fun49//
+    var n;
+    n=parseInt(prompt("¿Qué medida se debe tomar para conservar las lenguas indígenas de Honduras? \n1.Crear instituciones médicas gratuitas en diversos lugares\n2.Regalar libros en las escuelas, sobre los orígenes y  la evolución de las lenguas.\n3.Fomentar el uso de nuevas tecnologías como herramientas educativas.\n4.Crear leyes que regulen la diversidad lingüística y fomenten la equidad."))
+    if(n==4){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+rad11Btn.addEventListener('click', (e) => {//fun50//
+    var n;
+    n=parseInt(prompt("¿Cuál es la importancia de las palabras?\n1.Reflejan usos lingüísticos modernos.\n2.Constituyen el medio para entablar conversaciones. \n3.Generan adelantos tecnológicos.\n4.Dan a conocer nuevas ideas políticas."))
+    if(n==2){
+        checkmark.classList.remove("invisible")
+        xmark.classList.add("invisible")
+    }else{
+        checkmark.classList.add("invisible")
+        xmark.classList.remove("invisible")
+        alert("Opcion incorrecta. O no escogiste una opcion posible.")
+    }
+})
+
+
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
 const firstBtn = document.querySelector("#first-front-btn")
